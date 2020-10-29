@@ -13,6 +13,11 @@ import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
 import javax.persistence.OneToMany;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
+
+
 /**
  * Class Course
  *  
@@ -25,6 +30,7 @@ import javax.persistence.OneToMany;
 	@NamedQuery(name = "getAllCourse", query = "select c from Course c ")
 })
 public class Course {
+	
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)

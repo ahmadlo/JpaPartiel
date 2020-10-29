@@ -1,0 +1,6 @@
+2020-oct.-29 11:46:01 AM -  [http-nio-8080-exec-3] -  INFO  -  eu.ensup.daoImpl.CourseDao - Init User DAO
+2020-oct.-29 11:46:01 AM -  [http-nio-8080-exec-3] -  INFO  -  eu.ensup.daoImpl.CourseDao - Init Student DAO
+2020-oct.-29 11:46:02 AM -  [http-nio-8080-exec-3] -  INFO  -  eu.ensup.daoImpl.CourseDao - Login  User DAO
+2020-oct.-29 11:46:02 AM -  [http-nio-8080-exec-3] -  INFO  -  eu.ensup.daoImpl.CourseDao - Listingg Student
+2020-oct.-29 11:46:39 AM -  [http-nio-8080-exec-8] -  INFO  -  eu.ensup.daoImpl.CourseDao - Login  User DAO
+2020-oct.-29 11:46:39 AM -  [http-nio-8080-exec-8] -  INFO  -  eu.ensup.daoImpl.CourseDao - Listingg Student

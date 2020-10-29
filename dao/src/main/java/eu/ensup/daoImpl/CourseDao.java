@@ -7,6 +7,9 @@ import javax.persistence.EntityManagerFactory;
 import javax.persistence.EntityTransaction;
 import javax.persistence.Persistence;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import eu.ensup.Course;
 import eu.ensup.Student;
 import eu.ensup.dao.ICourseDao;
@@ -18,6 +21,10 @@ import eu.ensup.dao.ICourseDao;
  */
 public class CourseDao implements ICourseDao
 {
+	
+	
+	private static final Logger monLogger = LogManager.getLogger(CourseDao.class);
+
 	// Constructors
 	
 	/**
@@ -80,6 +87,7 @@ public class CourseDao implements ICourseDao
     	
     	entityManager.close();
 		entityManagerFactory.close();
+		monLogger.info("Listing Courses");
     	
     	return courses;
 	}

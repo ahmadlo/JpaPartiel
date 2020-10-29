@@ -7,10 +7,16 @@ import javax.persistence.EntityManagerFactory;
 import javax.persistence.EntityTransaction;
 import javax.persistence.Persistence;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import eu.ensup.Student;
 import eu.ensup.dao.IStudentDao2;
 
 public class StudentDao2 implements IStudentDao2 {
+	
+	private static final Logger monLogger = LogManager.getLogger(CourseDao.class);
+
 	
 	private EntityManagerFactory entityManagerFactory ;
 	private EntityManager entityManager;
@@ -18,6 +24,7 @@ public class StudentDao2 implements IStudentDao2 {
 	public StudentDao2() {
 		entityManagerFactory = Persistence.createEntityManagerFactory("demojpapartiel");
 		entityManager = entityManagerFactory.createEntityManager();
+		monLogger.info("Init Student DAO");
 	}
 	
 	
@@ -33,7 +40,7 @@ public class StudentDao2 implements IStudentDao2 {
 		
 		entityManager.persist(student);
 		entityTransaction.commit();
-		
+		monLogger.info("Create Student");
 	}
 	/**
 	 * Recherche un etudiant par son id
@@ -45,7 +52,7 @@ public class StudentDao2 implements IStudentDao2 {
 	public Student getStudent(long id) {
 
 		Student student = entityManager.find(Student.class, id);
-
+		monLogger.info("Get Student");
 		return student;
 	}
 	
@@ -60,6 +67,7 @@ public class StudentDao2 implements IStudentDao2 {
 		entityTransaction.begin();
 		entityManager.merge(student);
 		entityTransaction.commit();
+		monLogger.info("Update Student");
 		
 	}
 	
@@ -77,6 +85,7 @@ public class StudentDao2 implements IStudentDao2 {
 		entityManager.remove(student);
 		entityTransaction.commit();
 		Student studentVerify = getStudent(id);
+		monLogger.info("delete Student");
 		
 		if(studentVerify == null) {
 			return true;
@@ -92,6 +101,7 @@ public class StudentDao2 implements IStudentDao2 {
 	 */
 	@Override
 	public List<Student> readAllStudent(){
+		monLogger.info("Listingg Student");
 		
 		return entityManager.createNamedQuery("getAllStudent", Student.class).getResultList();
 	}
@@ -99,7 +109,7 @@ public class StudentDao2 implements IStudentDao2 {
 	
 	@Override
 	public List<Student> getStudentByResearch(String firstName, String lastName){
-		
+		monLogger.info("Research Student");
 		List<Student> listStudent = entityManager.createNamedQuery("getStudentByResearch", Student.class).setParameter("firstName",firstName).
 				setParameter("lastName", lastName).getResultList();
 		
@@ -109,6 +119,7 @@ public class StudentDao2 implements IStudentDao2 {
 	
 	@Override
 	public Student getStudentByEmail(String email) {
+		monLogger.info("get by Email Student");
 		
 		Student student = entityManager.createNamedQuery("getStudentByEmail", Student.class).setParameter("email",email)
 				.getSingleResult();

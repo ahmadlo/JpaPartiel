@@ -15,6 +15,16 @@
       
            <PatternLayout pattern="%d{yyyy-MMM-dd HH:mm:ss a} -  [%t] -  %-5level -  %logger{36} - %msg%n" />
     </File>  
+     <File name="Service-Logs" fileName="C:\Users\sdww1761\eclipse-workspace\jpa.partiel\logs\serviceLogs.log" append="true" >
+      
+           <PatternLayout pattern="%d{yyyy-MMM-dd HH:mm:ss a} -  [%t] -  %-5level -  %logger{36} - %msg%n" />
+    </File>  
+    
+     <File name="Dao-Logs" fileName="C:\Users\sdww1761\eclipse-workspace\jpa.partiel\logs\daoLogs.log" append="true" >
+      
+           <PatternLayout pattern="%d{yyyy-MMM-dd HH:mm:ss a} -  [%t] -  %-5level -  %logger{36} - %msg%n" />
+    </File>  
+    
 
   </Appenders>
 
@@ -38,7 +48,15 @@
        <AppenderRef ref="File-Appender" />
       <AppenderRef ref="Console" />
     </Logger>
-    
+      <!-- Log custom packages -->
+    <Logger name="eu.ensup" level="debug" >
+      <AppenderRef ref="Console" />
+      <AppenderRef ref="Service-Logs" />
+    </Logger>
+     <Logger name="eu.ensup.daoImpl" level="debug" >
+      <AppenderRef ref="Console" />
+      <AppenderRef ref="Dao-Logs" />
+    </Logger>
      <Root level="info">
      
       <AppenderRef ref="Console" />

@@ -2,6 +2,9 @@ package eu.ensup;
 
 import java.util.List;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import eu.ensup.dao.ICourseDao;
 import eu.ensup.daoImpl.CourseDao;
 import eu.ensup.Course;
@@ -13,6 +16,9 @@ import eu.ensup.Course;
  *
  */
 public class CourseService {
+	
+	private static final Logger monLogger = LogManager.getLogger(CourseService.class);
+
 
 	ICourseDao idao;
 	CourseDao dao;
@@ -24,6 +30,7 @@ public class CourseService {
 	public CourseService() {
 		super();
 		dao = new CourseDao();
+		monLogger.info("Demarrage du Logg");
 	}
 
 	/**
@@ -35,8 +42,10 @@ public class CourseService {
 //		dao.associateCourse(course, long1);
 //	}
 
-	public List<Course> getAllCourses() {		
+	public List<Course> getAllCourses() {	
+		monLogger.info("listing des Courses ");
 		return dao.getAllCourses();
+		
 	}
 
 }

@@ -2,6 +2,9 @@ package eu.ensup;
 
 import java.util.List;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import eu.ensup.daoImpl.StudentDao2;
 import eu.ensup.Student;
 
@@ -12,6 +15,9 @@ import eu.ensup.Student;
  *
  */
 public class StudentService implements IStudentService {
+	
+	private static final Logger monLogger = LogManager.getLogger(StudentService.class);
+
 
 	/*
 	 * IStudentDao idao; StudentDao dao;
@@ -20,6 +26,7 @@ public class StudentService implements IStudentService {
 	
 	public StudentService() {
 		this.dao = new StudentDao2();
+		monLogger.info("Demarrage du Logger : StudentService");
 	}
 	
 
@@ -27,6 +34,7 @@ public class StudentService implements IStudentService {
 	@Override
 	public void createStudent(Student student) {
 		dao.createStudent(student);
+		monLogger.info("On crée un Student");
 	}
 
 	/**
@@ -36,6 +44,7 @@ public class StudentService implements IStudentService {
 	 
 	@Override
 	public List<Student> readAllStudent() {
+		monLogger.info("Listing Student");
 		return dao.readAllStudent();
 	}
 
@@ -45,6 +54,7 @@ public class StudentService implements IStudentService {
 	 */
 	@Override
 	public void updateStudent(Student student) {
+		monLogger.info("Update Student");
 		dao.updateStudent(student);
 	}
 
@@ -54,6 +64,7 @@ public class StudentService implements IStudentService {
 	 */
 	@Override
 	public boolean deleteStudent(int id) {
+		monLogger.info("Suppression Student");
 		 return dao.deleteStudent(id);		
 	}
 
@@ -65,6 +76,7 @@ public class StudentService implements IStudentService {
 	@Override
 	public Student getStudent(int i) {
 		// TODO Auto-generated method stub
+		monLogger.info("get Student");
 		return dao.getStudent(i);
 	}
 
@@ -75,6 +87,7 @@ public class StudentService implements IStudentService {
 	 */
 	@Override
 	public Student getStudentByEmail(String email) {
+		monLogger.info("get Student by mail");
 		return dao.getStudentByEmail(email);
 	}
 	
@@ -86,6 +99,7 @@ public class StudentService implements IStudentService {
 	 */
 	@Override
 	public List<Student> getStudentByResearch(String firstName, String lastName){
+		monLogger.info("get Student by research");
 		return dao.getStudentByResearch(firstName, lastName);
 	}
 }
