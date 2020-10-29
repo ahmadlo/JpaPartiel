@@ -1,0 +1,415 @@
+2020-oct.-29 11:07:40 AM -  [http-nio-8080-exec-3] -  INFO  -  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: demojpapartiel
+	...]
+2020-oct.-29 11:07:40 AM -  [http-nio-8080-exec-3] -  INFO  -  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: demojpapartiel
+	...]
+2020-oct.-29 11:07:40 AM -  [http-nio-8080-exec-3] -  INFO  -  org.hibernate.Version - HHH000412: Hibernate Core {5.4.0.Final}
+2020-oct.-29 11:07:40 AM -  [http-nio-8080-exec-3] -  INFO  -  org.hibernate.Version - HHH000412: Hibernate Core {5.4.0.Final}
+2020-oct.-29 11:07:40 AM -  [http-nio-8080-exec-3] -  INFO  -  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2020-oct.-29 11:07:40 AM -  [http-nio-8080-exec-3] -  INFO  -  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2020-oct.-29 11:07:41 AM -  [http-nio-8080-exec-3] -  INFO  -  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-oct.-29 11:07:41 AM -  [http-nio-8080-exec-3] -  INFO  -  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-oct.-29 11:07:42 AM -  [http-nio-8080-exec-3] -  WARN  -  org.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2020-oct.-29 11:07:42 AM -  [http-nio-8080-exec-3] -  WARN  -  org.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2020-oct.-29 11:07:42 AM -  [http-nio-8080-exec-3] -  INFO  -  org.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/demo_jpa_partiel_final]
+2020-oct.-29 11:07:42 AM -  [http-nio-8080-exec-3] -  INFO  -  org.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/demo_jpa_partiel_final]
+2020-oct.-29 11:07:42 AM -  [http-nio-8080-exec-3] -  INFO  -  org.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {user=root, password=****}
+2020-oct.-29 11:07:42 AM -  [http-nio-8080-exec-3] -  INFO  -  org.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {user=root, password=****}
+2020-oct.-29 11:07:42 AM -  [http-nio-8080-exec-3] -  INFO  -  org.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2020-oct.-29 11:07:42 AM -  [http-nio-8080-exec-3] -  INFO  -  org.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2020-oct.-29 11:07:42 AM -  [http-nio-8080-exec-3] -  INFO  -  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+2020-oct.-29 11:07:42 AM -  [http-nio-8080-exec-3] -  INFO  -  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+2020-oct.-29 11:07:42 AM -  [http-nio-8080-exec-3] -  INFO  -  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-oct.-29 11:07:42 AM -  [http-nio-8080-exec-3] -  INFO  -  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-oct.-29 11:07:46 AM -  [http-nio-8080-exec-3] -  INFO  -  org.hibernate.tuple.PojoInstantiator - HHH000182: No default (no-argument) constructor for class: eu.ensup.Course (class must be instantiated by Interceptor)
+2020-oct.-29 11:07:46 AM -  [http-nio-8080-exec-3] -  INFO  -  org.hibernate.tuple.PojoInstantiator - HHH000182: No default (no-argument) constructor for class: eu.ensup.Course (class must be instantiated by Interceptor)
+2020-oct.-29 11:07:48 AM -  [http-nio-8080-exec-3] -  INFO  -  org.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@57f7455c] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2020-oct.-29 11:07:48 AM -  [http-nio-8080-exec-3] -  INFO  -  org.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@57f7455c] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2020-oct.-29 11:07:48 AM -  [http-nio-8080-exec-3] -  DEBUG -  org.hibernate.SQL - 
+    
+    alter table Person 
+       add constraint FK5f6hmjsouvq59534b95p9mmj7 
+       foreign key (course_id) 
+       references Course (id)
+2020-oct.-29 11:07:48 AM -  [http-nio-8080-exec-3] -  DEBUG -  org.hibernate.SQL - 
+    
+    alter table Person 
+       add constraint FK5f6hmjsouvq59534b95p9mmj7 
+       foreign key (course_id) 
+       references Course (id)
+2020-oct.-29 11:07:48 AM -  [http-nio-8080-exec-3] -  DEBUG -  org.hibernate.SQL - 
+    
+    alter table Person 
+       add constraint FK5f6hmjsouvq59534b95p9mmj7 
+       foreign key (course_id) 
+       references Course (id)
+2020-oct.-29 11:07:48 AM -  [http-nio-8080-exec-3] -  DEBUG -  org.hibernate.SQL - 
+    
+    alter table Person_Course 
+       add constraint FKc938gmdd1mmj8yjtmknt5jmok 
+       foreign key (courses_id) 
+       references Course (id)
+2020-oct.-29 11:07:48 AM -  [http-nio-8080-exec-3] -  DEBUG -  org.hibernate.SQL - 
+    
+    alter table Person_Course 
+       add constraint FKc938gmdd1mmj8yjtmknt5jmok 
+       foreign key (courses_id) 
+       references Course (id)
+2020-oct.-29 11:07:48 AM -  [http-nio-8080-exec-3] -  DEBUG -  org.hibernate.SQL - 
+    
+    alter table Person_Course 
+       add constraint FKc938gmdd1mmj8yjtmknt5jmok 
+       foreign key (courses_id) 
+       references Course (id)
+2020-oct.-29 11:07:48 AM -  [http-nio-8080-exec-3] -  DEBUG -  org.hibernate.SQL - 
+    
+    alter table Person_Course 
+       add constraint FKqae5ddh8vcmbfl2fmrifgqk9i 
+       foreign key (Student_id) 
+       references Person (id)
+2020-oct.-29 11:07:48 AM -  [http-nio-8080-exec-3] -  DEBUG -  org.hibernate.SQL - 
+    
+    alter table Person_Course 
+       add constraint FKqae5ddh8vcmbfl2fmrifgqk9i 
+       foreign key (Student_id) 
+       references Person (id)
+2020-oct.-29 11:07:48 AM -  [http-nio-8080-exec-3] -  DEBUG -  org.hibernate.SQL - 
+    
+    alter table Person_Course 
+       add constraint FKqae5ddh8vcmbfl2fmrifgqk9i 
+       foreign key (Student_id) 
+       references Person (id)
+2020-oct.-29 11:07:48 AM -  [http-nio-8080-exec-3] -  INFO  -  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-oct.-29 11:07:48 AM -  [http-nio-8080-exec-3] -  INFO  -  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-oct.-29 11:07:48 AM -  [http-nio-8080-exec-3] -  INFO  -  org.hibernate.hql.internal.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+2020-oct.-29 11:07:48 AM -  [http-nio-8080-exec-3] -  INFO  -  org.hibernate.hql.internal.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+2020-oct.-29 11:07:49 AM -  [http-nio-8080-exec-3] -  INFO  -  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: demojpapartiel
+	...]
+2020-oct.-29 11:07:49 AM -  [http-nio-8080-exec-3] -  INFO  -  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: demojpapartiel
+	...]
+2020-oct.-29 11:07:49 AM -  [http-nio-8080-exec-3] -  WARN  -  org.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2020-oct.-29 11:07:49 AM -  [http-nio-8080-exec-3] -  WARN  -  org.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2020-oct.-29 11:07:49 AM -  [http-nio-8080-exec-3] -  INFO  -  org.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/demo_jpa_partiel_final]
+2020-oct.-29 11:07:49 AM -  [http-nio-8080-exec-3] -  INFO  -  org.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/demo_jpa_partiel_final]
+2020-oct.-29 11:07:49 AM -  [http-nio-8080-exec-3] -  INFO  -  org.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {user=root, password=****}
+2020-oct.-29 11:07:49 AM -  [http-nio-8080-exec-3] -  INFO  -  org.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {user=root, password=****}
+2020-oct.-29 11:07:49 AM -  [http-nio-8080-exec-3] -  INFO  -  org.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2020-oct.-29 11:07:49 AM -  [http-nio-8080-exec-3] -  INFO  -  org.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2020-oct.-29 11:07:49 AM -  [http-nio-8080-exec-3] -  INFO  -  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+2020-oct.-29 11:07:49 AM -  [http-nio-8080-exec-3] -  INFO  -  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+2020-oct.-29 11:07:49 AM -  [http-nio-8080-exec-3] -  INFO  -  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-oct.-29 11:07:49 AM -  [http-nio-8080-exec-3] -  INFO  -  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-oct.-29 11:07:49 AM -  [http-nio-8080-exec-3] -  INFO  -  org.hibernate.tuple.PojoInstantiator - HHH000182: No default (no-argument) constructor for class: eu.ensup.Course (class must be instantiated by Interceptor)
+2020-oct.-29 11:07:49 AM -  [http-nio-8080-exec-3] -  INFO  -  org.hibernate.tuple.PojoInstantiator - HHH000182: No default (no-argument) constructor for class: eu.ensup.Course (class must be instantiated by Interceptor)
+2020-oct.-29 11:07:49 AM -  [http-nio-8080-exec-3] -  INFO  -  org.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@4b19e4d8] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2020-oct.-29 11:07:49 AM -  [http-nio-8080-exec-3] -  INFO  -  org.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@4b19e4d8] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2020-oct.-29 11:07:49 AM -  [http-nio-8080-exec-3] -  DEBUG -  org.hibernate.SQL - 
+    
+    alter table Person 
+       add constraint FK5f6hmjsouvq59534b95p9mmj7 
+       foreign key (course_id) 
+       references Course (id)
+2020-oct.-29 11:07:49 AM -  [http-nio-8080-exec-3] -  DEBUG -  org.hibernate.SQL - 
+    
+    alter table Person 
+       add constraint FK5f6hmjsouvq59534b95p9mmj7 
+       foreign key (course_id) 
+       references Course (id)
+2020-oct.-29 11:07:49 AM -  [http-nio-8080-exec-3] -  DEBUG -  org.hibernate.SQL - 
+    
+    alter table Person 
+       add constraint FK5f6hmjsouvq59534b95p9mmj7 
+       foreign key (course_id) 
+       references Course (id)
+2020-oct.-29 11:07:49 AM -  [http-nio-8080-exec-3] -  DEBUG -  org.hibernate.SQL - 
+    
+    alter table Person_Course 
+       add constraint FKc938gmdd1mmj8yjtmknt5jmok 
+       foreign key (courses_id) 
+       references Course (id)
+2020-oct.-29 11:07:49 AM -  [http-nio-8080-exec-3] -  DEBUG -  org.hibernate.SQL - 
+    
+    alter table Person_Course 
+       add constraint FKc938gmdd1mmj8yjtmknt5jmok 
+       foreign key (courses_id) 
+       references Course (id)
+2020-oct.-29 11:07:49 AM -  [http-nio-8080-exec-3] -  DEBUG -  org.hibernate.SQL - 
+    
+    alter table Person_Course 
+       add constraint FKc938gmdd1mmj8yjtmknt5jmok 
+       foreign key (courses_id) 
+       references Course (id)
+2020-oct.-29 11:07:49 AM -  [http-nio-8080-exec-3] -  DEBUG -  org.hibernate.SQL - 
+    
+    alter table Person_Course 
+       add constraint FKqae5ddh8vcmbfl2fmrifgqk9i 
+       foreign key (Student_id) 
+       references Person (id)
+2020-oct.-29 11:07:49 AM -  [http-nio-8080-exec-3] -  DEBUG -  org.hibernate.SQL - 
+    
+    alter table Person_Course 
+       add constraint FKqae5ddh8vcmbfl2fmrifgqk9i 
+       foreign key (Student_id) 
+       references Person (id)
+2020-oct.-29 11:07:49 AM -  [http-nio-8080-exec-3] -  DEBUG -  org.hibernate.SQL - 
+    
+    alter table Person_Course 
+       add constraint FKqae5ddh8vcmbfl2fmrifgqk9i 
+       foreign key (Student_id) 
+       references Person (id)
+2020-oct.-29 11:07:50 AM -  [http-nio-8080-exec-3] -  INFO  -  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-oct.-29 11:07:50 AM -  [http-nio-8080-exec-3] -  INFO  -  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-oct.-29 11:07:50 AM -  [http-nio-8080-exec-3] -  INFO  -  org.hibernate.hql.internal.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+2020-oct.-29 11:07:50 AM -  [http-nio-8080-exec-3] -  INFO  -  org.hibernate.hql.internal.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+2020-oct.-29 11:07:50 AM -  [http-nio-8080-exec-3] -  DEBUG -  org.hibernate.SQL - 
+    select
+        user0_.id as id2_1_,
+        user0_.adress as adress3_1_,
+        user0_.firstName as firstNam4_1_,
+        user0_.lastName as lastName5_1_,
+        user0_.mailAdresse as mailAdre6_1_,
+        user0_.numberPhone as numberPh7_1_,
+        user0_.login as login9_1_,
+        user0_.password as passwor10_1_,
+        user0_.profil as profil11_1_ 
+    from
+        Person user0_ 
+    where
+        user0_.type_personne='user' 
+        and user0_.login=? 
+        and user0_.password=?
+2020-oct.-29 11:07:50 AM -  [http-nio-8080-exec-3] -  DEBUG -  org.hibernate.SQL - 
+    select
+        user0_.id as id2_1_,
+        user0_.adress as adress3_1_,
+        user0_.firstName as firstNam4_1_,
+        user0_.lastName as lastName5_1_,
+        user0_.mailAdresse as mailAdre6_1_,
+        user0_.numberPhone as numberPh7_1_,
+        user0_.login as login9_1_,
+        user0_.password as passwor10_1_,
+        user0_.profil as profil11_1_ 
+    from
+        Person user0_ 
+    where
+        user0_.type_personne='user' 
+        and user0_.login=? 
+        and user0_.password=?
+2020-oct.-29 11:07:50 AM -  [http-nio-8080-exec-3] -  DEBUG -  org.hibernate.SQL - 
+    select
+        user0_.id as id2_1_,
+        user0_.adress as adress3_1_,
+        user0_.firstName as firstNam4_1_,
+        user0_.lastName as lastName5_1_,
+        user0_.mailAdresse as mailAdre6_1_,
+        user0_.numberPhone as numberPh7_1_,
+        user0_.login as login9_1_,
+        user0_.password as passwor10_1_,
+        user0_.profil as profil11_1_ 
+    from
+        Person user0_ 
+    where
+        user0_.type_personne='user' 
+        and user0_.login=? 
+        and user0_.password=?
+2020-oct.-29 11:07:50 AM -  [http-nio-8080-exec-3] -  TRACE -  org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [1] as [VARCHAR] - [de]
+2020-oct.-29 11:07:50 AM -  [http-nio-8080-exec-3] -  TRACE -  org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [1] as [VARCHAR] - [de]
+2020-oct.-29 11:07:50 AM -  [http-nio-8080-exec-3] -  TRACE -  org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [1] as [VARCHAR] - [de]
+2020-oct.-29 11:07:50 AM -  [http-nio-8080-exec-3] -  TRACE -  org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [2] as [VARCHAR] - [de]
+2020-oct.-29 11:07:50 AM -  [http-nio-8080-exec-3] -  TRACE -  org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [2] as [VARCHAR] - [de]
+2020-oct.-29 11:07:50 AM -  [http-nio-8080-exec-3] -  TRACE -  org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [2] as [VARCHAR] - [de]
+2020-oct.-29 11:07:50 AM -  [http-nio-8080-exec-3] -  TRACE -  org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([id2_1_] : [BIGINT]) - [6]
+2020-oct.-29 11:07:50 AM -  [http-nio-8080-exec-3] -  TRACE -  org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([id2_1_] : [BIGINT]) - [6]
+2020-oct.-29 11:07:50 AM -  [http-nio-8080-exec-3] -  TRACE -  org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([id2_1_] : [BIGINT]) - [6]
+2020-oct.-29 11:07:50 AM -  [http-nio-8080-exec-3] -  TRACE -  org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([adress3_1_] : [VARCHAR]) - [null]
+2020-oct.-29 11:07:50 AM -  [http-nio-8080-exec-3] -  TRACE -  org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([adress3_1_] : [VARCHAR]) - [null]
+2020-oct.-29 11:07:50 AM -  [http-nio-8080-exec-3] -  TRACE -  org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([adress3_1_] : [VARCHAR]) - [null]
+2020-oct.-29 11:07:50 AM -  [http-nio-8080-exec-3] -  TRACE -  org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([firstNam4_1_] : [VARCHAR]) - [null]
+2020-oct.-29 11:07:50 AM -  [http-nio-8080-exec-3] -  TRACE -  org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([firstNam4_1_] : [VARCHAR]) - [null]
+2020-oct.-29 11:07:50 AM -  [http-nio-8080-exec-3] -  TRACE -  org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([firstNam4_1_] : [VARCHAR]) - [null]
+2020-oct.-29 11:07:50 AM -  [http-nio-8080-exec-3] -  TRACE -  org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([lastName5_1_] : [VARCHAR]) - [null]
+2020-oct.-29 11:07:50 AM -  [http-nio-8080-exec-3] -  TRACE -  org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([lastName5_1_] : [VARCHAR]) - [null]
+2020-oct.-29 11:07:50 AM -  [http-nio-8080-exec-3] -  TRACE -  org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([lastName5_1_] : [VARCHAR]) - [null]
+2020-oct.-29 11:07:50 AM -  [http-nio-8080-exec-3] -  TRACE -  org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([mailAdre6_1_] : [VARCHAR]) - [null]
+2020-oct.-29 11:07:50 AM -  [http-nio-8080-exec-3] -  TRACE -  org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([mailAdre6_1_] : [VARCHAR]) - [null]
+2020-oct.-29 11:07:50 AM -  [http-nio-8080-exec-3] -  TRACE -  org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([mailAdre6_1_] : [VARCHAR]) - [null]
+2020-oct.-29 11:07:50 AM -  [http-nio-8080-exec-3] -  TRACE -  org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([numberPh7_1_] : [VARCHAR]) - [null]
+2020-oct.-29 11:07:50 AM -  [http-nio-8080-exec-3] -  TRACE -  org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([numberPh7_1_] : [VARCHAR]) - [null]
+2020-oct.-29 11:07:50 AM -  [http-nio-8080-exec-3] -  TRACE -  org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([numberPh7_1_] : [VARCHAR]) - [null]
+2020-oct.-29 11:07:50 AM -  [http-nio-8080-exec-3] -  TRACE -  org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([login9_1_] : [VARCHAR]) - [de]
+2020-oct.-29 11:07:50 AM -  [http-nio-8080-exec-3] -  TRACE -  org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([login9_1_] : [VARCHAR]) - [de]
+2020-oct.-29 11:07:50 AM -  [http-nio-8080-exec-3] -  TRACE -  org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([login9_1_] : [VARCHAR]) - [de]
+2020-oct.-29 11:07:50 AM -  [http-nio-8080-exec-3] -  TRACE -  org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([passwor10_1_] : [VARCHAR]) - [de]
+2020-oct.-29 11:07:50 AM -  [http-nio-8080-exec-3] -  TRACE -  org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([passwor10_1_] : [VARCHAR]) - [de]
+2020-oct.-29 11:07:50 AM -  [http-nio-8080-exec-3] -  TRACE -  org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([passwor10_1_] : [VARCHAR]) - [de]
+2020-oct.-29 11:07:50 AM -  [http-nio-8080-exec-3] -  TRACE -  org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([profil11_1_] : [VARCHAR]) - [R]
+2020-oct.-29 11:07:50 AM -  [http-nio-8080-exec-3] -  TRACE -  org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([profil11_1_] : [VARCHAR]) - [R]
+2020-oct.-29 11:07:50 AM -  [http-nio-8080-exec-3] -  TRACE -  org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([profil11_1_] : [VARCHAR]) - [R]
+2020-oct.-29 11:07:50 AM -  [http-nio-8080-exec-3] -  DEBUG -  org.hibernate.SQL - 
+    select
+        student0_.id as id2_1_,
+        student0_.adress as adress3_1_,
+        student0_.firstName as firstNam4_1_,
+        student0_.lastName as lastName5_1_,
+        student0_.mailAdresse as mailAdre6_1_,
+        student0_.numberPhone as numberPh7_1_,
+        student0_.course_id as course_12_1_,
+        student0_.dateOfBirth as dateOfBi8_1_ 
+    from
+        Person student0_ 
+    where
+        student0_.type_personne='student'
+2020-oct.-29 11:07:50 AM -  [http-nio-8080-exec-3] -  DEBUG -  org.hibernate.SQL - 
+    select
+        student0_.id as id2_1_,
+        student0_.adress as adress3_1_,
+        student0_.firstName as firstNam4_1_,
+        student0_.lastName as lastName5_1_,
+        student0_.mailAdresse as mailAdre6_1_,
+        student0_.numberPhone as numberPh7_1_,
+        student0_.course_id as course_12_1_,
+        student0_.dateOfBirth as dateOfBi8_1_ 
+    from
+        Person student0_ 
+    where
+        student0_.type_personne='student'
+2020-oct.-29 11:07:50 AM -  [http-nio-8080-exec-3] -  DEBUG -  org.hibernate.SQL - 
+    select
+        student0_.id as id2_1_,
+        student0_.adress as adress3_1_,
+        student0_.firstName as firstNam4_1_,
+        student0_.lastName as lastName5_1_,
+        student0_.mailAdresse as mailAdre6_1_,
+        student0_.numberPhone as numberPh7_1_,
+        student0_.course_id as course_12_1_,
+        student0_.dateOfBirth as dateOfBi8_1_ 
+    from
+        Person student0_ 
+    where
+        student0_.type_personne='student'
+2020-oct.-29 11:07:50 AM -  [http-nio-8080-exec-3] -  TRACE -  org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([id2_1_] : [BIGINT]) - [1]
+2020-oct.-29 11:07:50 AM -  [http-nio-8080-exec-3] -  TRACE -  org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([id2_1_] : [BIGINT]) - [1]
+2020-oct.-29 11:07:50 AM -  [http-nio-8080-exec-3] -  TRACE -  org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([id2_1_] : [BIGINT]) - [1]
+2020-oct.-29 11:07:50 AM -  [http-nio-8080-exec-3] -  TRACE -  org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([adress3_1_] : [VARCHAR]) - [6 rue des technos de simon]
+2020-oct.-29 11:07:50 AM -  [http-nio-8080-exec-3] -  TRACE -  org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([adress3_1_] : [VARCHAR]) - [6 rue des technos de simon]
+2020-oct.-29 11:07:50 AM -  [http-nio-8080-exec-3] -  TRACE -  org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([adress3_1_] : [VARCHAR]) - [6 rue des technos de simon]
+2020-oct.-29 11:07:50 AM -  [http-nio-8080-exec-3] -  TRACE -  org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([firstNam4_1_] : [VARCHAR]) - [Fatima]
+2020-oct.-29 11:07:50 AM -  [http-nio-8080-exec-3] -  TRACE -  org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([firstNam4_1_] : [VARCHAR]) - [Fatima]
+2020-oct.-29 11:07:50 AM -  [http-nio-8080-exec-3] -  TRACE -  org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([firstNam4_1_] : [VARCHAR]) - [Fatima]
+2020-oct.-29 11:07:50 AM -  [http-nio-8080-exec-3] -  TRACE -  org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([lastName5_1_] : [VARCHAR]) - [Bamba]
+2020-oct.-29 11:07:50 AM -  [http-nio-8080-exec-3] -  TRACE -  org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([lastName5_1_] : [VARCHAR]) - [Bamba]
+2020-oct.-29 11:07:50 AM -  [http-nio-8080-exec-3] -  TRACE -  org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([lastName5_1_] : [VARCHAR]) - [Bamba]
+2020-oct.-29 11:07:50 AM -  [http-nio-8080-exec-3] -  TRACE -  org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([mailAdre6_1_] : [VARCHAR]) - [bamba@yahoo.fr]
+2020-oct.-29 11:07:50 AM -  [http-nio-8080-exec-3] -  TRACE -  org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([mailAdre6_1_] : [VARCHAR]) - [bamba@yahoo.fr]
+2020-oct.-29 11:07:50 AM -  [http-nio-8080-exec-3] -  TRACE -  org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([mailAdre6_1_] : [VARCHAR]) - [bamba@yahoo.fr]
+2020-oct.-29 11:07:50 AM -  [http-nio-8080-exec-3] -  TRACE -  org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([numberPh7_1_] : [VARCHAR]) - [01 05 88 99 65]
+2020-oct.-29 11:07:50 AM -  [http-nio-8080-exec-3] -  TRACE -  org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([numberPh7_1_] : [VARCHAR]) - [01 05 88 99 65]
+2020-oct.-29 11:07:50 AM -  [http-nio-8080-exec-3] -  TRACE -  org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([numberPh7_1_] : [VARCHAR]) - [01 05 88 99 65]
+2020-oct.-29 11:07:50 AM -  [http-nio-8080-exec-3] -  TRACE -  org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([course_12_1_] : [INTEGER]) - [null]
+2020-oct.-29 11:07:50 AM -  [http-nio-8080-exec-3] -  TRACE -  org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([course_12_1_] : [INTEGER]) - [null]
+2020-oct.-29 11:07:50 AM -  [http-nio-8080-exec-3] -  TRACE -  org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([course_12_1_] : [INTEGER]) - [null]
+2020-oct.-29 11:07:50 AM -  [http-nio-8080-exec-3] -  TRACE -  org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([dateOfBi8_1_] : [VARCHAR]) - [Bamba]
+2020-oct.-29 11:07:50 AM -  [http-nio-8080-exec-3] -  TRACE -  org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([dateOfBi8_1_] : [VARCHAR]) - [Bamba]
+2020-oct.-29 11:07:50 AM -  [http-nio-8080-exec-3] -  TRACE -  org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([dateOfBi8_1_] : [VARCHAR]) - [Bamba]
+2020-oct.-29 11:07:50 AM -  [http-nio-8080-exec-3] -  TRACE -  org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([id2_1_] : [BIGINT]) - [2]
+2020-oct.-29 11:07:50 AM -  [http-nio-8080-exec-3] -  TRACE -  org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([id2_1_] : [BIGINT]) - [2]
+2020-oct.-29 11:07:50 AM -  [http-nio-8080-exec-3] -  TRACE -  org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([id2_1_] : [BIGINT]) - [2]
+2020-oct.-29 11:07:50 AM -  [http-nio-8080-exec-3] -  TRACE -  org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([adress3_1_] : [VARCHAR]) - [paris deschamps]
+2020-oct.-29 11:07:50 AM -  [http-nio-8080-exec-3] -  TRACE -  org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([adress3_1_] : [VARCHAR]) - [paris deschamps]
+2020-oct.-29 11:07:50 AM -  [http-nio-8080-exec-3] -  TRACE -  org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([adress3_1_] : [VARCHAR]) - [paris deschamps]
+2020-oct.-29 11:07:50 AM -  [http-nio-8080-exec-3] -  TRACE -  org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([firstNam4_1_] : [VARCHAR]) - [toto]
+2020-oct.-29 11:07:50 AM -  [http-nio-8080-exec-3] -  TRACE -  org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([firstNam4_1_] : [VARCHAR]) - [toto]
+2020-oct.-29 11:07:50 AM -  [http-nio-8080-exec-3] -  TRACE -  org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([firstNam4_1_] : [VARCHAR]) - [toto]
+2020-oct.-29 11:07:50 AM -  [http-nio-8080-exec-3] -  TRACE -  org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([lastName5_1_] : [VARCHAR]) - [tata]
+2020-oct.-29 11:07:50 AM -  [http-nio-8080-exec-3] -  TRACE -  org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([lastName5_1_] : [VARCHAR]) - [tata]
+2020-oct.-29 11:07:50 AM -  [http-nio-8080-exec-3] -  TRACE -  org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([lastName5_1_] : [VARCHAR]) - [tata]
+2020-oct.-29 11:07:50 AM -  [http-nio-8080-exec-3] -  TRACE -  org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([mailAdre6_1_] : [VARCHAR]) - [toto@gmail.com]
+2020-oct.-29 11:07:50 AM -  [http-nio-8080-exec-3] -  TRACE -  org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([mailAdre6_1_] : [VARCHAR]) - [toto@gmail.com]
+2020-oct.-29 11:07:50 AM -  [http-nio-8080-exec-3] -  TRACE -  org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([mailAdre6_1_] : [VARCHAR]) - [toto@gmail.com]
+2020-oct.-29 11:07:50 AM -  [http-nio-8080-exec-3] -  TRACE -  org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([numberPh7_1_] : [VARCHAR]) - [01 25 48 79 63]
+2020-oct.-29 11:07:50 AM -  [http-nio-8080-exec-3] -  TRACE -  org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([numberPh7_1_] : [VARCHAR]) - [01 25 48 79 63]
+2020-oct.-29 11:07:50 AM -  [http-nio-8080-exec-3] -  TRACE -  org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([numberPh7_1_] : [VARCHAR]) - [01 25 48 79 63]
+2020-oct.-29 11:07:50 AM -  [http-nio-8080-exec-3] -  TRACE -  org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([course_12_1_] : [INTEGER]) - [null]
+2020-oct.-29 11:07:50 AM -  [http-nio-8080-exec-3] -  TRACE -  org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([course_12_1_] : [INTEGER]) - [null]
+2020-oct.-29 11:07:50 AM -  [http-nio-8080-exec-3] -  TRACE -  org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([course_12_1_] : [INTEGER]) - [null]
+2020-oct.-29 11:07:50 AM -  [http-nio-8080-exec-3] -  TRACE -  org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([dateOfBi8_1_] : [VARCHAR]) - [tata]
+2020-oct.-29 11:07:50 AM -  [http-nio-8080-exec-3] -  TRACE -  org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([dateOfBi8_1_] : [VARCHAR]) - [tata]
+2020-oct.-29 11:07:50 AM -  [http-nio-8080-exec-3] -  TRACE -  org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([dateOfBi8_1_] : [VARCHAR]) - [tata]
+2020-oct.-29 11:07:50 AM -  [http-nio-8080-exec-3] -  TRACE -  org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([id2_1_] : [BIGINT]) - [3]
+2020-oct.-29 11:07:50 AM -  [http-nio-8080-exec-3] -  TRACE -  org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([id2_1_] : [BIGINT]) - [3]
+2020-oct.-29 11:07:50 AM -  [http-nio-8080-exec-3] -  TRACE -  org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([id2_1_] : [BIGINT]) - [3]
+2020-oct.-29 11:07:50 AM -  [http-nio-8080-exec-3] -  TRACE -  org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([adress3_1_] : [VARCHAR]) - [6 rue des technos de simon]
+2020-oct.-29 11:07:50 AM -  [http-nio-8080-exec-3] -  TRACE -  org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([adress3_1_] : [VARCHAR]) - [6 rue des technos de simon]
+2020-oct.-29 11:07:50 AM -  [http-nio-8080-exec-3] -  TRACE -  org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([adress3_1_] : [VARCHAR]) - [6 rue des technos de simon]
+2020-oct.-29 11:07:50 AM -  [http-nio-8080-exec-3] -  TRACE -  org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([firstNam4_1_] : [VARCHAR]) - [Fatima]
+2020-oct.-29 11:07:50 AM -  [http-nio-8080-exec-3] -  TRACE -  org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([firstNam4_1_] : [VARCHAR]) - [Fatima]
+2020-oct.-29 11:07:50 AM -  [http-nio-8080-exec-3] -  TRACE -  org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([firstNam4_1_] : [VARCHAR]) - [Fatima]
+2020-oct.-29 11:07:50 AM -  [http-nio-8080-exec-3] -  TRACE -  org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([lastName5_1_] : [VARCHAR]) - [Bamba]
+2020-oct.-29 11:07:50 AM -  [http-nio-8080-exec-3] -  TRACE -  org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([lastName5_1_] : [VARCHAR]) - [Bamba]
+2020-oct.-29 11:07:50 AM -  [http-nio-8080-exec-3] -  TRACE -  org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([lastName5_1_] : [VARCHAR]) - [Bamba]
+2020-oct.-29 11:07:50 AM -  [http-nio-8080-exec-3] -  TRACE -  org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([mailAdre6_1_] : [VARCHAR]) - [bamba@yahoo.fr]
+2020-oct.-29 11:07:50 AM -  [http-nio-8080-exec-3] -  TRACE -  org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([mailAdre6_1_] : [VARCHAR]) - [bamba@yahoo.fr]
+2020-oct.-29 11:07:50 AM -  [http-nio-8080-exec-3] -  TRACE -  org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([mailAdre6_1_] : [VARCHAR]) - [bamba@yahoo.fr]
+2020-oct.-29 11:07:50 AM -  [http-nio-8080-exec-3] -  TRACE -  org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([numberPh7_1_] : [VARCHAR]) - [01 05 88 99 65]
+2020-oct.-29 11:07:50 AM -  [http-nio-8080-exec-3] -  TRACE -  org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([numberPh7_1_] : [VARCHAR]) - [01 05 88 99 65]
+2020-oct.-29 11:07:50 AM -  [http-nio-8080-exec-3] -  TRACE -  org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([numberPh7_1_] : [VARCHAR]) - [01 05 88 99 65]
+2020-oct.-29 11:07:50 AM -  [http-nio-8080-exec-3] -  TRACE -  org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([course_12_1_] : [INTEGER]) - [null]
+2020-oct.-29 11:07:50 AM -  [http-nio-8080-exec-3] -  TRACE -  org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([course_12_1_] : [INTEGER]) - [null]
+2020-oct.-29 11:07:50 AM -  [http-nio-8080-exec-3] -  TRACE -  org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([course_12_1_] : [INTEGER]) - [null]
+2020-oct.-29 11:07:50 AM -  [http-nio-8080-exec-3] -  TRACE -  org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([dateOfBi8_1_] : [VARCHAR]) - [Bamba]
+2020-oct.-29 11:07:50 AM -  [http-nio-8080-exec-3] -  TRACE -  org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([dateOfBi8_1_] : [VARCHAR]) - [Bamba]
+2020-oct.-29 11:07:50 AM -  [http-nio-8080-exec-3] -  TRACE -  org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([dateOfBi8_1_] : [VARCHAR]) - [Bamba]
+2020-oct.-29 11:07:50 AM -  [http-nio-8080-exec-3] -  TRACE -  org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([id2_1_] : [BIGINT]) - [4]
+2020-oct.-29 11:07:50 AM -  [http-nio-8080-exec-3] -  TRACE -  org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([id2_1_] : [BIGINT]) - [4]
+2020-oct.-29 11:07:50 AM -  [http-nio-8080-exec-3] -  TRACE -  org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([id2_1_] : [BIGINT]) - [4]
+2020-oct.-29 11:07:50 AM -  [http-nio-8080-exec-3] -  TRACE -  org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([adress3_1_] : [VARCHAR]) - [paris deschamps]
+2020-oct.-29 11:07:50 AM -  [http-nio-8080-exec-3] -  TRACE -  org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([adress3_1_] : [VARCHAR]) - [paris deschamps]
+2020-oct.-29 11:07:50 AM -  [http-nio-8080-exec-3] -  TRACE -  org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([adress3_1_] : [VARCHAR]) - [paris deschamps]
+2020-oct.-29 11:07:50 AM -  [http-nio-8080-exec-3] -  TRACE -  org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([firstNam4_1_] : [VARCHAR]) - [toto]
+2020-oct.-29 11:07:50 AM -  [http-nio-8080-exec-3] -  TRACE -  org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([firstNam4_1_] : [VARCHAR]) - [toto]
+2020-oct.-29 11:07:50 AM -  [http-nio-8080-exec-3] -  TRACE -  org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([firstNam4_1_] : [VARCHAR]) - [toto]
+2020-oct.-29 11:07:50 AM -  [http-nio-8080-exec-3] -  TRACE -  org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([lastName5_1_] : [VARCHAR]) - [tata]
+2020-oct.-29 11:07:50 AM -  [http-nio-8080-exec-3] -  TRACE -  org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([lastName5_1_] : [VARCHAR]) - [tata]
+2020-oct.-29 11:07:50 AM -  [http-nio-8080-exec-3] -  TRACE -  org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([lastName5_1_] : [VARCHAR]) - [tata]
+2020-oct.-29 11:07:50 AM -  [http-nio-8080-exec-3] -  TRACE -  org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([mailAdre6_1_] : [VARCHAR]) - [toto@gmail.com]
+2020-oct.-29 11:07:50 AM -  [http-nio-8080-exec-3] -  TRACE -  org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([mailAdre6_1_] : [VARCHAR]) - [toto@gmail.com]
+2020-oct.-29 11:07:50 AM -  [http-nio-8080-exec-3] -  TRACE -  org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([mailAdre6_1_] : [VARCHAR]) - [toto@gmail.com]
+2020-oct.-29 11:07:50 AM -  [http-nio-8080-exec-3] -  TRACE -  org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([numberPh7_1_] : [VARCHAR]) - [01 25 48 79 63]
+2020-oct.-29 11:07:50 AM -  [http-nio-8080-exec-3] -  TRACE -  org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([numberPh7_1_] : [VARCHAR]) - [01 25 48 79 63]
+2020-oct.-29 11:07:50 AM -  [http-nio-8080-exec-3] -  TRACE -  org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([numberPh7_1_] : [VARCHAR]) - [01 25 48 79 63]
+2020-oct.-29 11:07:50 AM -  [http-nio-8080-exec-3] -  TRACE -  org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([course_12_1_] : [INTEGER]) - [null]
+2020-oct.-29 11:07:50 AM -  [http-nio-8080-exec-3] -  TRACE -  org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([course_12_1_] : [INTEGER]) - [null]
+2020-oct.-29 11:07:50 AM -  [http-nio-8080-exec-3] -  TRACE -  org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([course_12_1_] : [INTEGER]) - [null]
+2020-oct.-29 11:07:50 AM -  [http-nio-8080-exec-3] -  TRACE -  org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([dateOfBi8_1_] : [VARCHAR]) - [tata]
+2020-oct.-29 11:07:50 AM -  [http-nio-8080-exec-3] -  TRACE -  org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([dateOfBi8_1_] : [VARCHAR]) - [tata]
+2020-oct.-29 11:07:50 AM -  [http-nio-8080-exec-3] -  TRACE -  org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([dateOfBi8_1_] : [VARCHAR]) - [tata]
+2020-oct.-29 11:07:50 AM -  [http-nio-8080-exec-3] -  TRACE -  org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([id2_1_] : [BIGINT]) - [7]
+2020-oct.-29 11:07:50 AM -  [http-nio-8080-exec-3] -  TRACE -  org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([id2_1_] : [BIGINT]) - [7]
+2020-oct.-29 11:07:50 AM -  [http-nio-8080-exec-3] -  TRACE -  org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([id2_1_] : [BIGINT]) - [7]
+2020-oct.-29 11:07:50 AM -  [http-nio-8080-exec-3] -  TRACE -  org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([adress3_1_] : [VARCHAR]) - [11 boulevard Montaigut
+]
+2020-oct.-29 11:07:50 AM -  [http-nio-8080-exec-3] -  TRACE -  org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([adress3_1_] : [VARCHAR]) - [11 boulevard Montaigut
+]
+2020-oct.-29 11:07:50 AM -  [http-nio-8080-exec-3] -  TRACE -  org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([adress3_1_] : [VARCHAR]) - [11 boulevard Montaigut
+]
+2020-oct.-29 11:07:50 AM -  [http-nio-8080-exec-3] -  TRACE -  org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([firstNam4_1_] : [VARCHAR]) - [Ahmadou]
+2020-oct.-29 11:07:50 AM -  [http-nio-8080-exec-3] -  TRACE -  org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([firstNam4_1_] : [VARCHAR]) - [Ahmadou]
+2020-oct.-29 11:07:50 AM -  [http-nio-8080-exec-3] -  TRACE -  org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([firstNam4_1_] : [VARCHAR]) - [Ahmadou]
+2020-oct.-29 11:07:50 AM -  [http-nio-8080-exec-3] -  TRACE -  org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([lastName5_1_] : [VARCHAR]) - [Lo]
+2020-oct.-29 11:07:50 AM -  [http-nio-8080-exec-3] -  TRACE -  org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([lastName5_1_] : [VARCHAR]) - [Lo]
+2020-oct.-29 11:07:50 AM -  [http-nio-8080-exec-3] -  TRACE -  org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([lastName5_1_] : [VARCHAR]) - [Lo]
+2020-oct.-29 11:07:50 AM -  [http-nio-8080-exec-3] -  TRACE -  org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([mailAdre6_1_] : [VARCHAR]) - [11 boulevard Montaigut]
+2020-oct.-29 11:07:50 AM -  [http-nio-8080-exec-3] -  TRACE -  org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([mailAdre6_1_] : [VARCHAR]) - [11 boulevard Montaigut]
+2020-oct.-29 11:07:50 AM -  [http-nio-8080-exec-3] -  TRACE -  org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([mailAdre6_1_] : [VARCHAR]) - [11 boulevard Montaigut]
+2020-oct.-29 11:07:50 AM -  [http-nio-8080-exec-3] -  TRACE -  org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([numberPh7_1_] : [VARCHAR]) - [0755234475]
+2020-oct.-29 11:07:50 AM -  [http-nio-8080-exec-3] -  TRACE -  org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([numberPh7_1_] : [VARCHAR]) - [0755234475]
+2020-oct.-29 11:07:50 AM -  [http-nio-8080-exec-3] -  TRACE -  org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([numberPh7_1_] : [VARCHAR]) - [0755234475]
+2020-oct.-29 11:07:50 AM -  [http-nio-8080-exec-3] -  TRACE -  org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([course_12_1_] : [INTEGER]) - [null]
+2020-oct.-29 11:07:50 AM -  [http-nio-8080-exec-3] -  TRACE -  org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([course_12_1_] : [INTEGER]) - [null]
+2020-oct.-29 11:07:50 AM -  [http-nio-8080-exec-3] -  TRACE -  org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([course_12_1_] : [INTEGER]) - [null]
+2020-oct.-29 11:07:50 AM -  [http-nio-8080-exec-3] -  TRACE -  org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([dateOfBi8_1_] : [VARCHAR]) - [2020-10-28]
+2020-oct.-29 11:07:50 AM -  [http-nio-8080-exec-3] -  TRACE -  org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([dateOfBi8_1_] : [VARCHAR]) - [2020-10-28]
+2020-oct.-29 11:07:50 AM -  [http-nio-8080-exec-3] -  TRACE -  org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([dateOfBi8_1_] : [VARCHAR]) - [2020-10-28]

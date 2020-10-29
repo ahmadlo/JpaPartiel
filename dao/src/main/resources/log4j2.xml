@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration xmlns="http://logging.apache.org/log4j/2.0/config">
+<Properties>
+    <Property name="log-path">logs</Property>
+    <Property name="archive">${log-path}/archive</Property>
+</Properties>
+  <Appenders>
+
+    <!-- Console Appender -->
+    <Console name="Console" target="SYSTEM_OUT">
+      <PatternLayout pattern="%d{yyyy-MMM-dd HH:mm:ss a} - [%t] -  %-5level -  %logger{36} - %msg%n" />
+    </Console>
+    
+      <File name="File-Appender" fileName="C:\Users\sdww1761\eclipse-workspace\jpa.partiel\logs\xmlfilelog.log" append="true" >
+      
+           <PatternLayout pattern="%d{yyyy-MMM-dd HH:mm:ss a} -  [%t] -  %-5level -  %logger{36} - %msg%n" />
+    </File>  
+
+  </Appenders>
+
+  <Loggers>
+   
+    
+    <!-- Log everything in hibernate -->
+    <Logger name="org.hibernate" level="info" >
+      <AppenderRef ref="File-Appender" />
+      <AppenderRef ref="Console" />
+    </Logger>
+    
+    <!-- Log SQL statements -->
+    <Logger name="org.hibernate.SQL" level="debug">
+      <AppenderRef ref="File-Appender" />
+      <AppenderRef ref="Console" />
+    </Logger>
+    
+     <!-- Log JDBC bind parameters -->
+    <Logger name="org.hibernate.type.descriptor.sql" level="trace" >
+       <AppenderRef ref="File-Appender" />
+      <AppenderRef ref="Console" />
+    </Logger>
+    
+     <Root level="info">
+     
+      <AppenderRef ref="Console" />
+      <AppenderRef ref="File-Appender" />
+     
+    </Root>
+  </Loggers>
+</Configuration>
+
